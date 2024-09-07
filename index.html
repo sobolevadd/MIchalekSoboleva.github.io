@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- First Page: Invitation -->
+    <section class="hero">
+        <!-- Language Selector -->
+        <div class="language-selector">
+            <button onclick="changeLanguage('en')">English</button>
+            <button onclick="changeLanguage('ru')">Русский</button>
+            <button onclick="changeLanguage('cs')">Česky</button>
+        </div>
+        <div class="hero-text">
+            <h1 id="names">Matěj & Dáša</h1>
+            <p id="date">September 21, 2024</p>
+        </div>
+    </section>
+
+    <!-- Second Page: Calendar -->
+    <section class="calendar-section">
+        <h2>Save the Date</h2>
+        <div class="calendar">
+            <div class="month">
+                <h3>September 2024</h3>
+                <table>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                    <tr>
+                        <td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td><td>9</td><td>10</td><td>11</td><td>12</td><td>13</td><td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td><td>16</td><td>17</td><td>18</td><td>19</td><td>20</td><td class="heart">21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td><td>23</td><td>24</td><td>25</td><td>26</td><td>27</td><td>28</td>
+                    </tr>
+                    <tr>
+                        <td>29</td><td>30</td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Third Page: Wedding Plan -->
+    <section class="plan-section">
+        <h2>Wedding Plan</h2>
+        <ul class="timeline">
+            <li><span class="dot"></span>13:00 Arrival of guests</li>
+            <li><span class="dot"></span>13:15 Wedding ceremony</li>
+            <li><span class="dot"></span>13:30 Group wedding photos</li>
+            <li><span class="dot"></span>14:00 Lunch</li>
+            <li><span class="dot"></span>15:00 Secret activity</li>
+            <li><span class="dot"></span>16:30 Dessert</li>
+            <li><span class="dot"></span>18:00 First dance</li>
+        </ul>
+    </section>
+
+    <!-- Fourth Page: Location -->
+    <section class="location-section">
+        <h2>Our Location</h2>
+        <img src="/src/your-location-photo.jpg" alt="Location Photo" class="location-photo">
+        <p> <h3>Slavkov 6, 381 01 Bohdalovice - Český Krumlov</h3> </p>
+    </section>
+
+    <!-- Fifth Page: Details -->
+    <section class="details-section">
+        <h2>A Little Note From Us</h2>
+        <p>We’re glad you’ll be with us to celebrate this special day. Your presence will bring us so much joy. Thank you for taking the time to be here and share this moment with us. We can’t wait for the celebration!</p>
+    </section>
+
+<!-- New Section: Photo Gallery -->
+<section class="gallery-section">
+    <div class="slideshow-container">
+        <div class="slideshow-slide">
+            <img src="/src/photo1.jpg" class="slide-image" alt="Photo 1">
+            <img src="/src/photo2.jpg" class="slide-image" alt="Photo 2">
+            <img src="/src/photo3.jpg" class="slide-image" alt="Photo 3">
+            <img src="/src/photo4.jpg" class="slide-image" alt="Photo 4">
+        </div>
+        <button class="slideshow-prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="slideshow-next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+</section>
+
+
+    <!-- Sixth Page: Countdown Timer -->
+    <section class="countdown-section">
+        <h2>Time Until Our Wedding</h2>
+        <div id="countdown">
+            <div><span id="days"></span>Days</div>
+            <div><span id="hours"></span>Hours</div>
+            <div><span id="minutes"></span>Minutes</div>
+            <div><span id="seconds"></span>Seconds</div>
+        </div>
+    </section>
+
+    <!-- Seventh Page: Contacts -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Phone Matěj: +420 604 993 035</p>
+        <p>Phohe Dáša : +420 604 837 582</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
