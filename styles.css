@@ -36,7 +36,7 @@ section {
 .hero-text {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-family: 'Allura ', cursive;
+    font-family: 'Dancing Script', cursive;
     text-align: center;
     position: relative; /* Ensure text is above the overlay */
     z-index: 2;
